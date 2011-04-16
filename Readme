@@ -1,0 +1,19 @@
+Basic Auth Support for NSMutableURLRequest.
+
+To use, download the project directory and drag it into your own project.
+
+On your class:
+
+    #import "NSMutableURLRequest+BasicAuth.h"
+
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    
+    [req addBasicAuth:username andPassword:password]; // Username and password are NSString variables
+    
+    [self.webView loadRequest:req];
+
+That's it. Enjoy
+
+---
+
+Inspired from http://www.wetware.co.nz/blog/2009/02/iphone-uiwebview-http-basic-authentication/
